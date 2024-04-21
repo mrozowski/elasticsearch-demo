@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ElasticSearchDemo
+
+  elasticsearch:
+    uris: localhost:9200
+
