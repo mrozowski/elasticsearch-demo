@@ -2,7 +2,7 @@ package com.mrozowski.elasticsearchdemo.adapter.incoming
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.mrozowski.elasticsearchdemo.domain.Fixtures
-import com.mrozowski.elasticsearchdemo.domain.SimpleProductService
+import com.mrozowski.elasticsearchdemo.domain.ProductService
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ProductControllerSpec extends Specification {
 
   private MockMvc mockMvc
-  def simpleProductService = Mock(SimpleProductService)
+  def simpleProductService = Mock(ProductService)
   def underTest = new ProductController(simpleProductService)
 
   def setup() {

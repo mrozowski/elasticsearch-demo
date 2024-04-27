@@ -4,10 +4,10 @@ import com.mrozowski.elasticsearchdemo.domain.exception.ProductNotFoundException
 import com.mrozowski.elasticsearchdemo.domain.port.ProductRepository
 import spock.lang.Specification
 
-class SimpleProductServiceSpec extends Specification {
+class ProductServiceSpec extends Specification {
 
   def productRepository = Mock(ProductRepository)
-  def underTest = new SimpleProductService(productRepository)
+  def underTest = new ProductService(productRepository)
 
   def 'should add new product and returned generated id'() {
     when:

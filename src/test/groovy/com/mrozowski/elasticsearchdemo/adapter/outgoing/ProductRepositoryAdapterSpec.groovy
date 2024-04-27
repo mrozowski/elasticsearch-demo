@@ -1,12 +1,14 @@
 package com.mrozowski.elasticsearchdemo.adapter.outgoing
 
 import com.mrozowski.elasticsearchdemo.domain.Fixtures
+import org.springframework.data.elasticsearch.core.ElasticsearchOperations
 import spock.lang.Specification
 
 class ProductRepositoryAdapterSpec extends Specification {
 
   def esProductRepository = Mock(ElasticSearchProductRepository)
-  def underTest = new ProductRepositoryAdapter(esProductRepository)
+  def elasticsearchOperations = Mock(ElasticsearchOperations)
+  def underTest = new ProductRepositoryAdapter(esProductRepository, elasticsearchOperations)
 
   def 'should get product from repository by id'() {
     when:
