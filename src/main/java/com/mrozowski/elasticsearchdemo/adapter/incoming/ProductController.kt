@@ -3,7 +3,9 @@ package com.mrozowski.elasticsearchdemo.adapter.incoming
 import com.mrozowski.elasticsearchdemo.domain.ProductService
 import com.mrozowski.elasticsearchdemo.domain.exception.ProductNotFoundException
 import com.mrozowski.elasticsearchdemo.domain.model.Product
+import com.mrozowski.elasticsearchdemo.domain.model.SearchCommand
 import jakarta.servlet.http.HttpServletRequest
+import org.springframework.data.domain.Page
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -29,9 +31,15 @@ internal class ProductController(private val productService: ProductService) {
         return ResponseEntity.ok(productService.searchByNameOrDescription(fraze))
     }
 
+
     @GetMapping("/suggestions")
     fun suggest(@RequestParam("fraze") fraze: String): ResponseEntity<List<String>> {
         return ResponseEntity.ok(productService.suggest(fraze))
+    }
+
+    @GetMapping("/search")
+    fun suggest(@RequestBody command: SearchCommand): ResponseEntity<Page<Product>> {
+        return ResponseEntity.ok(productService.search(command))
     }
 
     @ExceptionHandler(ProductNotFoundException::class)

@@ -2,7 +2,10 @@ package com.mrozowski.elasticsearchdemo.adapter.outgoing
 
 import co.elastic.clients.elasticsearch._types.query_dsl.*
 import com.mrozowski.elasticsearchdemo.domain.model.Product
+import com.mrozowski.elasticsearchdemo.domain.model.SearchCommand
 import com.mrozowski.elasticsearchdemo.domain.port.ProductRepository
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.PageImpl
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.elasticsearch.client.elc.NativeQuery
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations
@@ -43,6 +46,38 @@ internal class ProductRepositoryAdapter(
             .map(SearchHit<ProductDocument>::getContent)
             .map(this::mapToProduct)
             .toList()
+    }
+
+    override fun search(command: SearchCommand): Page<Product> {
+        val queryBuilder = BoolQuery.Builder()
+        command.fraze?.let { fraze ->
+            val wildcardQuery = WildcardQuery.of { query: WildcardQuery.Builder ->
+                query.field("name").value("$fraze*")
+            }
+            queryBuilder.must { q -> q.wildcard(wildcardQuery) }
+        }
+
+        command.priceFilter?.let {
+            val range = RangeQuery.of { query ->
+                query.field("priceInCents")
+                    .from(it.priceRange.start.toString())
+                    .to(it.priceRange.toString())
+            }
+            queryBuilder.must { q -> q.range(range) }
+        }
+        val page = PageRequest.of(command.page, command.size)
+        val searchQuery = NativeQuery.builder()
+            .withQuery { q -> q.bool(queryBuilder.build())}
+            .withPageable(page)
+            .build()
+
+        val searchHits = elasticsearchOperations.search(searchQuery, ProductDocument::class.java)
+        val hits = searchHits.stream()
+            .map(SearchHit<ProductDocument>::getContent)
+            .map(this::mapToProduct)
+            .toList()
+
+        return PageImpl(hits, page, searchHits.totalHits)
     }
 
     override fun suggest(fraze: String): List<String> {
