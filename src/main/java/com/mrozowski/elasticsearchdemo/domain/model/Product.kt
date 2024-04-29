@@ -11,6 +11,7 @@ data class Product(
     enum class Category {
         ELECTRONICS,
         APPLIANCES,
-        CLOTHES
+        CLOTHES,
+        FURNITURE
     }
 }

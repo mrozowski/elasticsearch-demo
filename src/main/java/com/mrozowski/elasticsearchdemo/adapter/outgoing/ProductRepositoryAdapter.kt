@@ -29,6 +29,10 @@ internal class ProductRepositoryAdapter(
         return repository.save(mapToProductDocument(product)).id!!
     }
 
+    override fun addProducts(products: List<Product>) {
+        repository.saveAll(products.map(this::mapToProductDocument))
+    }
+
     override fun searchByNameOrDescription(value: String): List<Product> {
         val multiMatchQuery = MultiMatchQuery.of { query ->
             query.operator(Operator.And)
@@ -51,8 +55,13 @@ internal class ProductRepositoryAdapter(
     override fun search(command: SearchCommand): Page<Product> {
         val queryBuilder = BoolQuery.Builder()
         command.fraze?.let { fraze ->
+            val matchPhraseQuery = MatchPhraseQuery.of { query: MatchPhraseQuery.Builder ->
+                query.field("name").query(fraze)
+            }
+            queryBuilder.must { q -> q.matchPhrase(matchPhraseQuery) }
+        }?: run{
             val wildcardQuery = WildcardQuery.of { query: WildcardQuery.Builder ->
-                query.field("name").value("$fraze*")
+                query.field("name").value("*")
             }
             queryBuilder.must { q -> q.wildcard(wildcardQuery) }
         }
@@ -62,6 +71,7 @@ internal class ProductRepositoryAdapter(
                 query.field("priceInCents")
                     .from(it.priceRange.start.toString())
                     .to(it.priceRange.toString())
+
             }
             queryBuilder.must { q -> q.range(range) }
         }
@@ -69,6 +79,7 @@ internal class ProductRepositoryAdapter(
         val searchQuery = NativeQuery.builder()
             .withQuery { q -> q.bool(queryBuilder.build())}
             .withPageable(page)
+
             .build()
 
         val searchHits = elasticsearchOperations.search(searchQuery, ProductDocument::class.java)
@@ -80,7 +91,7 @@ internal class ProductRepositoryAdapter(
         return PageImpl(hits, page, searchHits.totalHits)
     }
 
-    override fun suggest(fraze: String): List<String> {
+    override fun suggest(fraze: String): Set<String> {
         val wildcardQuery = WildcardQuery.of { query: WildcardQuery.Builder ->
             query.field("name").value("$fraze*")
         }
@@ -93,7 +104,7 @@ internal class ProductRepositoryAdapter(
         return searchSuggestions.stream()
             .map(SearchHit<ProductDocument>::getContent)
             .map(ProductDocument::name)
-            .toList()
+            .toList().toSet()
     }
 
     private fun mapToProduct(document: ProductDocument): Product {

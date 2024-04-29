@@ -21,7 +21,11 @@ class ProductService(private val productRepository: ProductRepository) {
         return productRepository.addProduct(product)
     }
 
-    fun suggest(fraze: String): List<String> {
+    fun addProducts(products: List<Product>) {
+        productRepository.addProducts(products)
+    }
+
+    fun suggest(fraze: String): Set<String> {
         return productRepository.suggest(fraze)
     }
 

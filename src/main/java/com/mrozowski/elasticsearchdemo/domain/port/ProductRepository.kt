@@ -9,5 +9,6 @@ interface ProductRepository {
     fun addProduct(product: Product): String
     fun searchByNameOrDescription(value: String): List<Product>
     fun search(command: SearchCommand): Page<Product>
-    fun suggest(fraze: String): List<String>
+    fun suggest(fraze: String): Set<String>
+    fun addProducts(products: List<Product>)
 }

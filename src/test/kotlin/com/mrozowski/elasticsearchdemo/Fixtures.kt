@@ -13,7 +13,7 @@ class Fixtures {
         const val PRICE = 120000
         const val QUANTITY = 10
         val CATEGORY = Product.Category.ELECTRONICS
-        val SUGGESTIONS = listOf("apple watch", "apple iphone")
+        val SUGGESTIONS = setOf("apple watch", "apple iphone")
 
         val PRODUCT: Product = Product(
             id = PRODUCT_ID,

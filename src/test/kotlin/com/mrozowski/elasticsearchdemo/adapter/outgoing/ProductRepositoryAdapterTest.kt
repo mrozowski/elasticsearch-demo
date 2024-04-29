@@ -4,7 +4,6 @@ import com.mrozowski.elasticsearchdemo.Fixtures
 import io.kotest.core.spec.style.ShouldSpec
 import io.kotest.matchers.shouldBe
 import org.mockito.Mockito.mock
-import org.mockito.Mockito.verify
 import org.mockito.kotlin.whenever
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations
 import java.util.*

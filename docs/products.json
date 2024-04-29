@@ -1,0 +1,424 @@
+[
+  {
+    "name": "Samsung Galaxy S21",
+    "description": "Flagship smartphone with Exynos 2100 or Snapdragon 888 chipset and Dynamic AMOLED display",
+    "category": "ELECTRONICS",
+    "quantity": 30,
+    "priceInCents": 89999
+  },
+  {
+    "name": "Google Pixel 6 Pro",
+    "description": "Premium Android smartphone with Tensor chip and high-resolution OLED display",
+    "category": "ELECTRONICS",
+    "quantity": 25,
+    "priceInCents": 89999
+  },
+  {
+    "name": "OnePlus 9 Pro",
+    "description": "Powerful smartphone with Hasselblad camera system and Fluid AMOLED display",
+    "category": "ELECTRONICS",
+    "quantity": 20,
+    "priceInCents": 79999
+  },
+  {
+    "name": "Xiaomi Mi 11 Ultra",
+    "description": "Feature-packed smartphone with Snapdragon 888 chipset and massive camera setup",
+    "category": "ELECTRONICS",
+    "quantity": 15,
+    "priceInCents": 89999
+  },
+  {
+    "name": "Sony Xperia 1 III",
+    "description": "Flagship Sony smartphone with 4K OLED display and Snapdragon 888 processor",
+    "category": "ELECTRONICS",
+    "quantity": 10,
+    "priceInCents": 129999
+  },
+  {
+    "name": "Realme GT Neo 2",
+    "description": "High-performance smartphone with Snapdragon 870 chipset and Super AMOLED display",
+    "category": "ELECTRONICS",
+    "quantity": 20,
+    "priceInCents": 39999
+  },
+  {
+    "name": "Asus ROG Phone 5",
+    "description": "Gaming smartphone with Snapdragon 888+ chipset and 144Hz AMOLED display",
+    "category": "ELECTRONICS",
+    "quantity": 15,
+    "priceInCents": 89999
+  },
+  {
+    "name": "Motorola Edge 20 Pro",
+    "description": "Slim and stylish Motorola smartphone with Snapdragon 870 processor and OLED display",
+    "category": "ELECTRONICS",
+    "quantity": 20,
+    "priceInCents": 69999
+  },
+  {
+    "name": "Nokia X20",
+    "description": "Mid-range Nokia smartphone with Snapdragon 480 processor and 5G connectivity",
+    "category": "ELECTRONICS",
+    "quantity": 30,
+    "priceInCents": 39999
+  },
+  {
+    "name": "Lenovo Legion Phone Duel 2",
+    "description": "Gaming-centric dual-screen smartphone with Snapdragon 888 chipset and 144Hz AMOLED displays",
+    "category": "ELECTRONICS",
+    "quantity": 10,
+    "priceInCents": 99999
+  },
+  {
+    "name": "AirPods Pro",
+    "description": "Wireless noise-canceling earbuds with active noise cancellation",
+    "category": "ELECTRONICS",
+    "quantity": 50,
+    "priceInCents": 24999
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "description": "Latest flagship smartphone with ProMotion display and A15 Bionic chip",
+    "category": "ELECTRONICS",
+    "quantity": 20,
+    "priceInCents": 99999
+  },
+  {
+    "name": "iPad Air",
+    "description": "Thin and lightweight tablet with A14 Bionic chip and 10.9-inch Liquid Retina display",
+    "category": "ELECTRONICS",
+    "quantity": 30,
+    "priceInCents": 59999
+  },
+  {
+    "name": "MacBook Pro 16-inch",
+    "description": "Powerful laptop with M1 Pro or M1 Max chip and stunning Retina display",
+    "category": "ELECTRONICS",
+    "quantity": 15,
+    "priceInCents": 239999
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "description": "Advanced smartwatch with larger display and new health features",
+    "category": "ELECTRONICS",
+    "quantity": 40,
+    "priceInCents": 39999
+  },
+  {
+    "name": "iMac 27-inch",
+    "description": "All-in-one desktop computer with 5K Retina display and powerful performance",
+    "category": "ELECTRONICS",
+    "quantity": 10,
+    "priceInCents": 179999
+  },
+  {
+    "name": "Apple TV 4K",
+    "description": "Streaming media player with support for 4K HDR content and Dolby Atmos",
+    "category": "ELECTRONICS",
+    "quantity": 25,
+    "priceInCents": 17999
+  },
+  {
+    "name": "Apple HomePod Mini",
+    "description": "Compact smart speaker with Siri support and impressive sound",
+    "category": "ELECTRONICS",
+    "quantity": 35,
+    "priceInCents": 9999
+  },
+  {
+    "name": "Apple Pencil (2nd generation)",
+    "description": "Precision stylus for iPad Pro with seamless responsiveness and magnetic charging",
+    "category": "ELECTRONICS",
+    "quantity": 20,
+    "priceInCents": 12999
+  },
+  {
+    "name": "Apple Leather Case for iPhone 13",
+    "description": "Genuine leather case designed for iPhone 13 series with soft microfiber lining",
+    "category": "ELECTRONICS",
+    "quantity": 50,
+    "priceInCents": 5999
+  },
+  {
+    "name": "Nike Air Jordan 1 Retro High OG",
+    "description": "Iconic basketball sneakers featuring the classic Air Jordan 1 design",
+    "category": "CLOTHES",
+    "quantity": 15,
+    "priceInCents": 17999
+  },
+  {
+    "name": "Adidas Originals Superstar Shoes",
+    "description": "Classic Adidas sneakers with the iconic shell toe design",
+    "category": "CLOTHES",
+    "quantity": 20,
+    "priceInCents": 8999
+  },
+  {
+    "name": "Levi's 501 Original Fit Jeans",
+    "description": "Timeless Levi's jeans with a straight fit and button fly",
+    "category": "CLOTHES",
+    "quantity": 30,
+    "priceInCents": 5999
+  },
+  {
+    "name": "Ralph Lauren Polo Shirt",
+    "description": "Stylish cotton polo shirt with the iconic Ralph Lauren logo",
+    "category": "CLOTHES",
+    "quantity": 25,
+    "priceInCents": 6999
+  },
+  {
+    "name": "Gucci GG Marmont Leather Belt",
+    "description": "Luxurious leather belt with the GG logo buckle from Gucci",
+    "category": "CLOTHES",
+    "quantity": 15,
+    "priceInCents": 29999
+  },
+  {
+    "name": "Calvin Klein Men's Underwear Pack",
+    "description": "Comfortable cotton boxer briefs in a multi-pack from Calvin Klein",
+    "category": "CLOTHES",
+    "quantity": 40,
+    "priceInCents": 3999
+  },
+  {
+    "name": "Tommy Hilfiger Women's Trench Coat",
+    "description": "Classic trench coat for women with Tommy Hilfiger's signature style",
+    "category": "CLOTHES",
+    "quantity": 20,
+    "priceInCents": 12999
+  },
+  {
+    "name": "Versace Medusa Head T-Shirt",
+    "description": "Graphic print T-shirt featuring Versace's iconic Medusa head motif",
+    "category": "CLOTHES",
+    "quantity": 18,
+    "priceInCents": 9999
+  },
+  {
+    "name": "Hugo Boss Men's Suit",
+    "description": "Tailored wool suit for men from Hugo Boss's premium collection",
+    "category": "CLOTHES",
+    "quantity": 12,
+    "priceInCents": 299999
+  },
+  {
+    "name": "Chanel Classic Flap Bag",
+    "description": "Timeless quilted leather handbag with the signature CC turn-lock closure from Chanel",
+    "category": "CLOTHES",
+    "quantity": 8,
+    "priceInCents": 499999
+  },
+  {
+    "name": "Balenciaga Speed Trainer Sneakers",
+    "description": "Fashion-forward high-top sneakers with sock-like fit and distinctive logo",
+    "category": "CLOTHES",
+    "quantity": 20,
+    "priceInCents": 69999
+  },
+  {
+    "name": "Prada Nylon Backpack",
+    "description": "Stylish and durable nylon backpack with leather trim from Prada",
+    "category": "CLOTHES",
+    "quantity": 15,
+    "priceInCents": 129999
+  },
+  {
+    "name": "Louis Vuitton Monogram Scarf",
+    "description": "Luxurious wool and silk blend scarf featuring Louis Vuitton's iconic monogram pattern",
+    "category": "CLOTHES",
+    "quantity": 25,
+    "priceInCents": 59999
+  },
+  {
+    "name": "Dior Oblique Saddle Bag",
+    "description": "Chic crossbody bag crafted from Dior's signature oblique canvas",
+    "category": "CLOTHES",
+    "quantity": 12,
+    "priceInCents": 349999
+  },
+  {
+    "name": "Fendi FF Logo Sweatshirt",
+    "description": "Cozy cotton sweatshirt featuring Fendi's FF logo print",
+    "category": "CLOTHES",
+    "quantity": 18,
+    "priceInCents": 79999
+  },
+  {
+    "name": "Givenchy Distressed Denim Jacket",
+    "description": "Fashionable distressed denim jacket with logo patch from Givenchy",
+    "category": "CLOTHES",
+    "quantity": 15,
+    "priceInCents": 159999
+  },
+  {
+    "name": "Burberry Check Print Shirt",
+    "description": "Classic cotton shirt adorned with Burberry's iconic check pattern",
+    "category": "CLOTHES",
+    "quantity": 22,
+    "priceInCents": 10999
+  },
+  {
+    "name": "Yves Saint Laurent Leather Biker Jacket",
+    "description": "Timeless leather biker jacket with signature YSL hardware",
+    "category": "CLOTHES",
+    "quantity": 10,
+    "priceInCents": 499999
+  },
+  {
+    "name": "Gucci GG Supreme Canvas Wallet",
+    "description": "Elegant leather wallet featuring Gucci's GG supreme canvas print",
+    "category": "CLOTHES",
+    "quantity": 30,
+    "priceInCents": 29999
+  },
+  {
+    "name": "Valentino Rockstud Ballerina Flats",
+    "description": "Chic leather ballerina flats embellished with Valentino's signature rockstud details",
+    "category": "CLOTHES",
+    "quantity": 20,
+    "priceInCents": 69999
+  },
+  {
+    "name": "Mid-Century Modern Sofa",
+    "description": "Elegant and comfortable sofa with tufted upholstery and tapered legs",
+    "category": "FURNITURE",
+    "quantity": 10,
+    "priceInCents": 59999
+  },
+  {
+    "name": "Industrial Style Dining Table",
+    "description": "Sturdy dining table featuring a rustic wood top and metal legs",
+    "category": "FURNITURE",
+    "quantity": 15,
+    "priceInCents": 39999
+  },
+  {
+    "name": "Scandinavian Design Armchair",
+    "description": "Minimalist armchair with clean lines and upholstered seat",
+    "category": "FURNITURE",
+    "quantity": 12,
+    "priceInCents": 24999
+  },
+  {
+    "name": "Modern Glass Coffee Table",
+    "description": "Sleek coffee table with a tempered glass top and geometric metal base",
+    "category": "FURNITURE",
+    "quantity": 20,
+    "priceInCents": 14999
+  },
+  {
+    "name": "Queen Size Platform Bed",
+    "description": "Contemporary platform bed frame with upholstered headboard",
+    "category": "FURNITURE",
+    "quantity": 8,
+    "priceInCents": 79999
+  },
+  {
+    "name": "Rustic Wooden Bookshelf",
+    "description": "Vintage-style bookshelf crafted from reclaimed wood with multiple shelves",
+    "category": "FURNITURE",
+    "quantity": 10,
+    "priceInCents": 29999
+  },
+  {
+    "name": "Velvet Upholstered Ottoman",
+    "description": "Luxurious velvet ottoman with button tufting and gold-finished legs",
+    "category": "FURNITURE",
+    "quantity": 15,
+    "priceInCents": 17999
+  },
+  {
+    "name": "Farmhouse Style Dining Chairs (Set of 4)",
+    "description": "Classic farmhouse dining chairs with distressed finish and spindle backs",
+    "category": "FURNITURE",
+    "quantity": 16,
+    "priceInCents": 8999
+  },
+  {
+    "name": "Antique Brass Floor Lamp",
+    "description": "Vintage-inspired floor lamp with adjustable arm and brass finish",
+    "category": "FURNITURE",
+    "quantity": 18,
+    "priceInCents": 5999
+  },
+  {
+    "name": "Contemporary L-Shaped Desk",
+    "description": "Sleek and functional L-shaped desk with storage drawers and metal legs",
+    "category": "FURNITURE",
+    "quantity": 12,
+    "priceInCents": 24999
+  },
+  {
+    "name": "Modern Reclining Sectional Sofa",
+    "description": "Comfortable sectional sofa with reclining seats and built-in cup holders",
+    "category": "FURNITURE",
+    "quantity": 7,
+    "priceInCents": 129999
+  },
+  {
+    "name": "Round Marble Dining Table",
+    "description": "Luxurious round dining table with a genuine marble top and metal base",
+    "category": "FURNITURE",
+    "quantity": 9,
+    "priceInCents": 89999
+  },
+  {
+    "name": "Industrial Style Bar Stools (Set of 2)",
+    "description": "Stylish bar stools with metal frames and wooden seats",
+    "category": "FURNITURE",
+    "quantity": 14,
+    "priceInCents": 6999
+  },
+  {
+    "name": "Floating Wall Shelves (Set of 3)",
+    "description": "Minimalist floating shelves for wall display, made from solid wood",
+    "category": "FURNITURE",
+    "quantity": 20,
+    "priceInCents": 4999
+  },
+  {
+    "name": "Leather Recliner Armchair",
+    "description": "Plush leather armchair with reclining feature and padded armrests",
+    "category": "FURNITURE",
+    "quantity": 11,
+    "priceInCents": 39999
+  },
+  {
+    "name": "Wooden Bedside Table with Drawers",
+    "description": "Compact bedside table crafted from solid wood with storage drawers",
+    "category": "FURNITURE",
+    "quantity": 13,
+    "priceInCents": 14999
+  },
+  {
+    "name": "Tufted Upholstered Bench",
+    "description": "Elegant upholstered bench with tufted seat and acrylic legs",
+    "category": "FURNITURE",
+    "quantity": 18,
+    "priceInCents": 8999
+  },
+  {
+    "name": "Modern Glass Display Cabinet",
+    "description": "Sleek glass display cabinet with adjustable shelves and LED lighting",
+    "category": "FURNITURE",
+    "quantity": 6,
+    "priceInCents": 199999
+  },
+  {
+    "name": "Outdoor Patio Dining Set (5-Piece)",
+    "description": "Weather-resistant patio dining set with table and four chairs",
+    "category": "FURNITURE",
+    "quantity": 9,
+    "priceInCents": 39999
+  },
+  {
+    "name": "Rattan Hanging Egg Chair",
+    "description": "Trendy rattan hanging chair with cushion for indoor or outdoor use",
+    "category": "FURNITURE",
+    "quantity": 10,
+    "priceInCents": 79999
+  }
+]
+
+

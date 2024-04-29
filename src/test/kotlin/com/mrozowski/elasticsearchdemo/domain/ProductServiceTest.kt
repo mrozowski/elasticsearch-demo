@@ -50,7 +50,7 @@ class ProductServiceTest : ShouldSpec({
 
     should("return suggestions based on phrase") {
         val phrase = "apple"
-        val suggestions = listOf("apple watch", "apple iphone")
+        val suggestions = setOf("apple watch", "apple iphone")
         whenever(productRepository.suggest(phrase)).thenReturn(suggestions)
 
         val suggestedItems = underTest.suggest(phrase)

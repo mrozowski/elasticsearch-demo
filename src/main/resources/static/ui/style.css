@@ -1,0 +1,128 @@
+:root {
+    --background-color: #08111F;
+    --text-color: #E0E7F8;
+    --main-color: #8FB0E4;
+    --accent-color: #D1427E;
+    --card-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h2 {
+    margin: 0 0 1rem 0;
+}
+
+p {
+    margin: 0 0 0.5rem 0;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    padding-bottom: 2rem;
+    box-shadow: 1px 1px 8px 0 #040404;
+}
+
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+.margin-top-1{
+    margin-top: 1rem;
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.empty {
+    margin-top: 8rem;
+}
+
+#suggestion-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--background-color);
+    margin-left: 1.2rem;
+    width: 29.5rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 300ms ease;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+.search-input {
+    border: none;
+    border-radius: 1.3rem;
+    height: 2.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    flex-grow: 1;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.default-button {
+    background-color: var(--main-color);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: none;
+    border-radius: 1.3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 300ms ease;
+}
+
+.default-button:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.main-dev-width {
+    width: 40rem;
+}
+
+.item {
+    background-color: var(--card-color);
+    border-radius: 1.3rem;
+    padding: 1rem;
+}
