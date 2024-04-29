@@ -16,7 +16,7 @@ The app uses UI to visualize elasticsearch functionality like suggesting product
 You will need docker installed to run elasticsearch.
 1. Run `docker-compose up -d` command
 2. Run the spring app. You can use your IDE
-3. Feed app with some test data. More about it in this [document]()
+3. Feed app with some test data. More about it in this [document](./docs/test-data.md)
 4. Open `http://localhost:8080/ui/index.html`
 
 ## UI
