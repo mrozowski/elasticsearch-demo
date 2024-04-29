@@ -1,7 +1,7 @@
 # Elasticsearch demo
 Example of how to use Elasticsearch and with Spring framework and Kotlin to add, search and suggest items.
 
-The app uses UI to visualise elasticsearch functionality like suggesting product name based on user input
+The app uses UI to visualize elasticsearch functionality like suggesting product names based on user input
 
 ## Technological stack
 * Kotlin
@@ -18,6 +18,12 @@ You will need docker installed to run elasticsearch.
 2. Run the spring app. You can use your IDE
 3. Feed app with some test data. More about it in this [document]()
 4. Open `http://localhost:8080/ui/index.html`
+
+## UI
+UI is made with JS, CSS and HTML. It has a simple search bar, product list and suggestions
+
+[ui-preview.webm](https://github.com/mrozowski/elasticsearch-demo/assets/67066372/f0d8bbd7-ddd4-461b-8ec5-a47290f1d21e)
+
 
 ## API
 
